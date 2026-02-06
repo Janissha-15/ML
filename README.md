@@ -169,117 +169,59 @@ The `Ex-3.ipynb` notebook demonstrates a complete workflow for regression modeli
 
 
 ---
-
-## 📁 `ML_GIT / ML_four / README.md`
-
-```md
-# Machine Learning Exercise 4
+# Machine Learning Exercise 4  
 
 This folder (`ML_four`) contains the materials and datasets for the fourth exercise in the
-**Getting Started with Machine Learning** series.
+**Getting Started with Machine Learning** series.  
 
-## 📧 Binary Classification: Logistic Regression & Support Vector Machines
+## 📧 Binary Classification: Logistic Regression & Support Vector Machines  
 
-This exercise focuses on binary classification for spam email detection using
-**Logistic Regression** and **Support Vector Machines (SVM)**.
-The experiment analyzes how feature scaling, kernel selection, and hyperparameter tuning
-impact classification performance.
+In this exercise, we focus on binary classification techniques to detect spam emails using
+**Logistic Regression** and **Support Vector Machines (SVM)**.  
+The experiment emphasizes how feature scaling, kernel selection, and hyperparameter
+tuning influence classification performance.
 
-Different SVM kernels are compared to study linear and non-linear decision boundaries,
-while cross-validation is used to assess generalization ability.
+Different SVM kernels are compared to study linear and nonlinear decision boundaries,
+and cross-validation is used to evaluate generalization ability.
 
-## Contents
+## Contents  
 
 - **Ex-4.ipynb**: Jupyter Notebook implementing Logistic Regression and SVM models  
-- **dataset/**: Directory containing the email dataset  
-- **ML-4.pdf**: Experiment report with analysis and results  
+- **dataset/**: Directory containing the email dataset used for training and testing  
+- **ML-4.pdf**: Experiment report documenting the methodology and results  
 
-## Notebook Summary (Ex-4.ipynb)
+## Notebook Summary (Ex-4.ipynb)  
 
-The `Ex-4.ipynb` notebook presents a full binary classification workflow:
+The `Ex-4.ipynb` notebook demonstrates a complete workflow for building and analyzing
+binary classifiers:
 
-### 1. Data Preprocessing
-- **Handling Missing Values**: Identifying and addressing incomplete records  
-- **Feature Scaling**: Standardizing numerical features using `StandardScaler`  
-- **Train–Validation–Test Split**: Ensuring unbiased model evaluation  
+### 1. Data Preprocessing  
+- **Handling Missing Values**: Checking and addressing incomplete records  
+- **Feature Scaling**: Standardizing numerical attributes using `StandardScaler`  
+- **Train–Validation–Test Split**: Dividing the data to support tuning and unbiased evaluation  
 
-### 2. Models Implemented
-- **Baseline Logistic Regression**: Reference model  
-- **Tuned Logistic Regression**: Performance improvement using regularization  
+### 2. Models Implemented  
+- **Baseline Logistic Regression**: Establishing reference performance  
+- **Tuned Logistic Regression**: Improving results through regularization and
+  hyperparameter search  
 - **Support Vector Machines**: Linear, Polynomial, RBF, and Sigmoid kernels  
 
-### 3. Hyperparameter Tuning
-- **RandomizedSearchCV**: Efficient parameter exploration  
-- **Cross-Validation**: 5-fold validation for stability and robustness  
+### 3. Hyperparameter Tuning  
+- **RandomizedSearchCV**: Efficient exploration of parameter combinations  
+- **Cross-Validation**: 5-fold cross-validation to assess stability and robustness  
 
-### 4. Evaluation & Performance Analysis
+### 4. Evaluation & Performance Analysis  
 - **Metrics**: Accuracy, Precision, Recall, and F1-score  
 - **Confusion Matrices**: Visualization of classification errors  
-- **ROC Curves & AUC**: Model comparison across kernels  
-- **Learning Curves**: Bias–variance analysis  
-- **Execution Time**: Computational cost comparison  
+- **ROC Curves & AUC**: Comparison of discriminative ability across models  
+- **Learning Curves**: Bias–variance analysis with increasing training size  
+- **Execution Time**: Computational efficiency comparison  
 
-## Getting Started
+## Getting Started  
 
 1. Open `Ex-4.ipynb` using JupyterLab, Google Colab, or VS Code  
-2. Install required libraries:
+
+2. Install the required Python libraries:  
    ```bash
    pip install pandas numpy matplotlib seaborn scikit-learn
 
----
-
-## 📁 `ML_GIT / ML_four / README.md`
-
-```md
-# Machine Learning Exercise 4
-
-This folder (`ML_four`) contains the materials and datasets for the fourth exercise in the
-**Getting Started with Machine Learning** series.
-
-## 📧 Binary Classification: Logistic Regression & Support Vector Machines
-
-This exercise focuses on binary classification for spam email detection using
-**Logistic Regression** and **Support Vector Machines (SVM)**.
-The experiment analyzes how feature scaling, kernel selection, and hyperparameter tuning
-impact classification performance.
-
-Different SVM kernels are compared to study linear and non-linear decision boundaries,
-while cross-validation is used to assess generalization ability.
-
-## Contents
-
-- **Ex-4.ipynb**: Jupyter Notebook implementing Logistic Regression and SVM models  
-- **dataset/**: Directory containing the email dataset  
-- **ML-4.pdf**: Experiment report with analysis and results  
-
-## Notebook Summary (Ex-4.ipynb)
-
-The `Ex-4.ipynb` notebook presents a full binary classification workflow:
-
-### 1. Data Preprocessing
-- **Handling Missing Values**: Identifying and addressing incomplete records  
-- **Feature Scaling**: Standardizing numerical features using `StandardScaler`  
-- **Train–Validation–Test Split**: Ensuring unbiased model evaluation  
-
-### 2. Models Implemented
-- **Baseline Logistic Regression**: Reference model  
-- **Tuned Logistic Regression**: Performance improvement using regularization  
-- **Support Vector Machines**: Linear, Polynomial, RBF, and Sigmoid kernels  
-
-### 3. Hyperparameter Tuning
-- **RandomizedSearchCV**: Efficient parameter exploration  
-- **Cross-Validation**: 5-fold validation for stability and robustness  
-
-### 4. Evaluation & Performance Analysis
-- **Metrics**: Accuracy, Precision, Recall, and F1-score  
-- **Confusion Matrices**: Visualization of classification errors  
-- **ROC Curves & AUC**: Model comparison across kernels  
-- **Learning Curves**: Bias–variance analysis  
-- **Execution Time**: Computational cost comparison  
-
-## Getting Started
-
-1. Open `Ex-4.ipynb` using JupyterLab, Google Colab, or VS Code  
-2. Install required libraries:
-   ```bash
-   pip install pandas numpy matplotlib seaborn scikit-learn
