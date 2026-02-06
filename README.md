@@ -112,95 +112,174 @@ The complete ML pipeline is covered, including preprocessing, model training, an
 
 
 
----
-
-## 📁 `ML_GIT / ML_Three / README.md`
-
-```md
 # Machine Learning Exercise 3
 
-This folder (`ML_Three`) contains the third exercise in the **Getting Started with Machine Learning** series.
+This folder (`ML_Three`) contains the materials and datasets for the third exercise in the
+**Getting Started with Machine Learning** series.
 
 ## 📈 Supervised Learning: Regression & Regularization
 
-This exercise focuses on predicting continuous values using regression models.  
-Different regularization techniques are explored to prevent overfitting and improve generalization.
+In this exercise, we explore advanced regression techniques to predict continuous values.
+Using a housing / loan-related dataset, multiple regression models are implemented and
+compared. The focus is on understanding how regularization techniques such as
+**Ridge**, **Lasso**, and **Elastic Net** help prevent overfitting and improve feature
+selection.
+
+This exercise highlights the importance of structured data pipelines, including automated
+handling of missing values and encoding of categorical variables.
 
 ## Contents
 
-- **Ex-3.ipynb**: Regression pipeline implementation  
-- **ML-3.pdf**: Experiment report  
-- **dataset/**: Housing / loan-related datasets  
+- **Ex-3.ipynb**: Jupyter Notebook implementing the regression pipeline and model comparison  
+- **dataset/**: Directory containing datasets used for training and testing  
+- **ML-3.pdf**: Experiment report documenting methodology and results  
 
 ## Notebook Summary (Ex-3.ipynb)
 
-1. **Data Preprocessing**
-   - Missing value handling using `SimpleImputer`
-   - Feature scaling and encoding using `ColumnTransformer`
-   - Pipeline-based workflow
+The `Ex-3.ipynb` notebook demonstrates a complete workflow for regression modeling:
 
-2. **Regression Models**
-   - Linear Regression
-   - Ridge Regression (L2)
-   - Lasso Regression (L1)
-   - Elastic Net
+### 1. Data Preprocessing Pipeline
+- **Handling Missing Values**: Using `SimpleImputer` for numerical and categorical data  
+- **Feature Transformation**: Applying `StandardScaler` and `OneHotEncoder` through
+  `ColumnTransformer`  
+- **Pipelines**: Building Scikit-learn `Pipeline` objects for clean and reproducible workflows  
 
-3. **Hyperparameter Tuning**
-   - GridSearchCV
-   - Cross-validation
+### 2. Regression Models Implemented
+- **Linear Regression**: Baseline model  
+- **Ridge Regression (L2)**: Controls multicollinearity using L2 regularization  
+- **Lasso Regression (L1)**: Performs automatic feature selection  
+- **Elastic Net**: Combines L1 and L2 penalties for flexible regularization  
 
-4. **Evaluation**
-   - MAE, MSE, RMSE, R²
-   - Residual analysis
-   - Coefficient comparison
+### 3. Hyperparameter Tuning
+- **GridSearchCV**: Searching optimal `alpha` and `l1_ratio` values  
+- **Cross-Validation**: Ensuring model generalization using k-fold validation  
+
+### 4. Evaluation & Performance Analysis
+- **Metrics**: MAE, MSE, RMSE, and R²  
+- **Coefficient Analysis**: Comparing feature importance across models  
+- **Execution Time**: Evaluating computational efficiency  
 
 ## Getting Started
 
-1. Open `Ex-3.ipynb`
-2. Install required libraries
-3. Run preprocessing, training, and evaluation cells
+1. Open `Ex-3.ipynb` using JupyterLab, Google Colab, or VS Code  
+2. Install required libraries:
+   ```bash
+   pip install pandas numpy matplotlib seaborn scikit-learn
 
 
+
+---
+
+## 📁 `ML_GIT / ML_four / README.md`
+
+```md
 # Machine Learning Exercise 4
 
-This folder (`ML_four`) contains the fourth exercise in the **Getting Started with Machine Learning** series.
+This folder (`ML_four`) contains the materials and datasets for the fourth exercise in the
+**Getting Started with Machine Learning** series.
 
-## 📧 Binary Classification: Logistic Regression & SVM
+## 📧 Binary Classification: Logistic Regression & Support Vector Machines
 
-This exercise compares **Logistic Regression** and **Support Vector Machines (SVM)** for spam email classification.  
-Different kernels and regularization strategies are analyzed to study model performance and generalization.
+This exercise focuses on binary classification for spam email detection using
+**Logistic Regression** and **Support Vector Machines (SVM)**.
+The experiment analyzes how feature scaling, kernel selection, and hyperparameter tuning
+impact classification performance.
+
+Different SVM kernels are compared to study linear and non-linear decision boundaries,
+while cross-validation is used to assess generalization ability.
 
 ## Contents
 
-- **Ex-4.ipynb**: Notebook implementing Logistic Regression and SVM  
-- **ML-4.pdf**: Experiment report  
-- **dataset/**: Email spam dataset  
+- **Ex-4.ipynb**: Jupyter Notebook implementing Logistic Regression and SVM models  
+- **dataset/**: Directory containing the email dataset  
+- **ML-4.pdf**: Experiment report with analysis and results  
 
 ## Notebook Summary (Ex-4.ipynb)
 
-1. **Data Preprocessing**
-   - Missing value handling
-   - Feature scaling
-   - Train-validation-test split
+The `Ex-4.ipynb` notebook presents a full binary classification workflow:
 
-2. **Models Implemented**
-   - Logistic Regression (baseline & tuned)
-   - SVM with Linear, Polynomial, RBF, and Sigmoid kernels
+### 1. Data Preprocessing
+- **Handling Missing Values**: Identifying and addressing incomplete records  
+- **Feature Scaling**: Standardizing numerical features using `StandardScaler`  
+- **Train–Validation–Test Split**: Ensuring unbiased model evaluation  
 
-3. **Hyperparameter Tuning**
-   - RandomizedSearchCV
-   - Cross-validation
+### 2. Models Implemented
+- **Baseline Logistic Regression**: Reference model  
+- **Tuned Logistic Regression**: Performance improvement using regularization  
+- **Support Vector Machines**: Linear, Polynomial, RBF, and Sigmoid kernels  
 
-4. **Evaluation**
-   - Accuracy, Precision, Recall, F1-score
-   - Confusion matrices
-   - ROC curves & AUC
-   - Learning curves
-   - Execution time comparison
+### 3. Hyperparameter Tuning
+- **RandomizedSearchCV**: Efficient parameter exploration  
+- **Cross-Validation**: 5-fold validation for stability and robustness  
+
+### 4. Evaluation & Performance Analysis
+- **Metrics**: Accuracy, Precision, Recall, and F1-score  
+- **Confusion Matrices**: Visualization of classification errors  
+- **ROC Curves & AUC**: Model comparison across kernels  
+- **Learning Curves**: Bias–variance analysis  
+- **Execution Time**: Computational cost comparison  
 
 ## Getting Started
 
-1. Open `Ex-4.ipynb`
-2. Install required libraries
-3. Execute all cells sequentially
+1. Open `Ex-4.ipynb` using JupyterLab, Google Colab, or VS Code  
+2. Install required libraries:
+   ```bash
+   pip install pandas numpy matplotlib seaborn scikit-learn
 
+---
+
+## 📁 `ML_GIT / ML_four / README.md`
+
+```md
+# Machine Learning Exercise 4
+
+This folder (`ML_four`) contains the materials and datasets for the fourth exercise in the
+**Getting Started with Machine Learning** series.
+
+## 📧 Binary Classification: Logistic Regression & Support Vector Machines
+
+This exercise focuses on binary classification for spam email detection using
+**Logistic Regression** and **Support Vector Machines (SVM)**.
+The experiment analyzes how feature scaling, kernel selection, and hyperparameter tuning
+impact classification performance.
+
+Different SVM kernels are compared to study linear and non-linear decision boundaries,
+while cross-validation is used to assess generalization ability.
+
+## Contents
+
+- **Ex-4.ipynb**: Jupyter Notebook implementing Logistic Regression and SVM models  
+- **dataset/**: Directory containing the email dataset  
+- **ML-4.pdf**: Experiment report with analysis and results  
+
+## Notebook Summary (Ex-4.ipynb)
+
+The `Ex-4.ipynb` notebook presents a full binary classification workflow:
+
+### 1. Data Preprocessing
+- **Handling Missing Values**: Identifying and addressing incomplete records  
+- **Feature Scaling**: Standardizing numerical features using `StandardScaler`  
+- **Train–Validation–Test Split**: Ensuring unbiased model evaluation  
+
+### 2. Models Implemented
+- **Baseline Logistic Regression**: Reference model  
+- **Tuned Logistic Regression**: Performance improvement using regularization  
+- **Support Vector Machines**: Linear, Polynomial, RBF, and Sigmoid kernels  
+
+### 3. Hyperparameter Tuning
+- **RandomizedSearchCV**: Efficient parameter exploration  
+- **Cross-Validation**: 5-fold validation for stability and robustness  
+
+### 4. Evaluation & Performance Analysis
+- **Metrics**: Accuracy, Precision, Recall, and F1-score  
+- **Confusion Matrices**: Visualization of classification errors  
+- **ROC Curves & AUC**: Model comparison across kernels  
+- **Learning Curves**: Bias–variance analysis  
+- **Execution Time**: Computational cost comparison  
+
+## Getting Started
+
+1. Open `Ex-4.ipynb` using JupyterLab, Google Colab, or VS Code  
+2. Install required libraries:
+   ```bash
+   pip install pandas numpy matplotlib seaborn scikit-learn
