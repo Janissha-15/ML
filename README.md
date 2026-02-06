@@ -1,156 +1,59 @@
-machine_learning_repository:
-  name: ML_GIT
-  series: Getting Started with Machine Learning
+# Machine Learning Exercise 1
 
-  exercises:
+This folder (`ML_one`) contains the materials and datasets for the first exercise in the **Getting Started with Machine Learning** series.
 
-    - exercise: Machine Learning Exercise 1
-      folder: ML_one
-      description: >
-        This exercise introduces the fundamentals of Machine Learning
-        through hands-on Exploratory Data Analysis (EDA). The focus is on
-        understanding datasets using Python libraries before building
-        any models.
+## 📊 Learning Machine Learning Fundamentals
 
-      learning_focus:
-        - Data cleaning and preprocessing
-        - Data visualization and pattern discovery
-        - Building intuition about datasets
+In this exercise, we explore the basics of Machine Learning by working hands-on with essential Python libraries such as **NumPy**, **Pandas**, and **Matplotlib**.  
+The focus is on understanding data through cleaning, manipulation, and visualization techniques, which are critical steps before building any model.
 
-      tools_used:
-        - NumPy
-        - Pandas
-        - Matplotlib
-        - Seaborn
+This folder serves as a learning playground for experimenting with multiple real-world datasets and developing intuition about how Machine Learning algorithms interpret data.
 
-      contents:
-        - Ex-1.ipynb
-        - ML-1.pdf
-        - datasets/
+## Contents
 
-      datasets:
-        - Iris.csv
-        - loan_train.csv
-        - english.csv
-        - diabetes.csv
-        - email.csv
+- **Ex-1.ipynb**: Main Jupyter Notebook for Exercise 1  
+- **ML-1.pdf**: Problem statement and theoretical background  
+- **datasets/**: Folder containing CSV datasets used in the exercise  
 
-      notebook_summary:
-        loan_amount_prediction:
-          - Data inspection and missing value analysis
-          - Statistical summaries
-          - Visualizations including histograms, boxplots, and heatmaps
+## Datasets
 
-        iris_dataset_analysis:
-          - Species-wise analysis
-          - Pairplots and correlation analysis
+The `datasets/` directory includes:
 
-        handwritten_character_recognition:
-          - Label distribution analysis
-          - Visualization of sample handwritten characters
+- `Iris.csv` – Iris flower classification dataset  
+- `loan_train.csv` – Loan amount prediction dataset  
+- `english.csv` – Metadata for handwritten character images  
+- `diabetes.csv` – Diabetes prediction dataset  
+- `email.csv` – Email spam detection dataset  
 
-        diabetes_prediction:
-          - Health metric analysis
-          - Feature exploration
+**Handwritten Characters Dataset**  
+The complete dataset can be downloaded from:  
+https://www.kaggle.com/datasets/dhruvildave/english-handwritten-characters-dataset
 
-        email_spam_classification:
-          - Text dataset inspection
-          - Initial spam vs non-spam exploration
+## Notebook Summary (Ex-1.ipynb)
 
-    - exercise: Machine Learning Exercise 2
-      folder: ML_two
-      description: >
-        This exercise focuses on supervised learning techniques and
-        introduces basic Machine Learning algorithms. Emphasis is placed
-        on understanding model behavior and evaluation metrics.
+Exploratory Data Analysis (EDA) is performed on multiple datasets:
 
-      learning_focus:
-        - Supervised learning concepts
-        - Model training and testing
-        - Performance evaluation
+1. **Loan Amount Prediction**
+   - Data inspection, missing value checks
+   - Statistical summaries
+   - Histograms, boxplots, scatter plots, correlation heatmaps
 
-      algorithms_covered:
-        - Linear Regression
-        - Logistic Regression
-        - K-Nearest Neighbors (KNN)
+2. **Iris Dataset Analysis**
+   - Species-wise distribution
+   - Pairplots and correlation analysis
 
-      contents:
-        - Ex-2.ipynb
-        - ML-2.pdf
-        - datasets/
+3. **Handwritten Character Recognition**
+   - Label distribution
+   - Sample image visualization
 
-      notebook_summary:
-        - Dataset loading and preprocessing
-        - Train-test split
-        - Model training
-        - Accuracy, precision, recall, and F1-score analysis
-        - Visualization of results and predictions
+4. **Diabetes Prediction**
+   - Feature exploration related to health metrics
 
-    - exercise: Machine Learning Exercise 3
-      folder: ML_Three
-      description: >
-        This exercise explores classification techniques and kernel-based
-        learning methods. The goal is to understand complex decision
-        boundaries and the role of feature transformation.
+5. **Email Spam Classification**
+   - Initial analysis for spam vs non-spam detection
 
-      learning_focus:
-        - Classification problems
-        - Kernel methods
-        - Bias–variance tradeoff
+## Getting Started
 
-      algorithms_covered:
-        - Support Vector Machines (SVM)
-        - Kernel functions (Linear, Polynomial, RBF)
-
-      contents:
-        - Ex-3.ipynb
-        - ML-3.pdf
-        - datasets/
-
-      notebook_summary:
-        - Understanding linear vs non-linear separability
-        - Applying different kernel functions
-        - Hyperparameter tuning
-        - Visualization of decision boundaries
-
-    - exercise: Machine Learning Exercise 4
-      folder: ML_four
-      description: >
-        This exercise covers advanced Machine Learning concepts including
-        model optimization and performance improvement strategies.
-
-      learning_focus:
-        - Advanced evaluation techniques
-        - Model optimization
-        - Case-study based analysis
-
-      topics_covered:
-        - Cross-validation
-        - Overfitting and underfitting
-        - Feature selection
-        - Model comparison
-
-      contents:
-        - Ex-4.ipynb
-        - ML-4.pdf
-        - datasets/
-
-      notebook_summary:
-        - Comparative study of multiple models
-        - Optimization using validation techniques
-        - Final performance analysis and conclusions
-
-  getting_started:
-    steps:
-      - Open the notebook files using Jupyter Notebook, JupyterLab, VS Code, or Google Colab
-      - Install required libraries (numpy, pandas, matplotlib, seaborn, scikit-learn)
-      - Follow instructions inside each notebook for execution
-
-  author:
-    name: Jani
-    role: Engineering Student
-    institution: SSN College of Engineering
-
-  note: >
-    This repository is maintained for academic learning and coursework
-    submission purposes only.
+1. Open `Ex-1.ipynb` using Jupyter Notebook / Google Colab / VS Code  
+2. Install required libraries: `numpy`, `pandas`, `matplotlib`, `seaborn`  
+3. Run the notebook cells sequentially
