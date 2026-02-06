@@ -1,51 +1,150 @@
-repository:
+machine_learning_repository:
   name: ML_GIT
-  description: >
-    This repository contains Machine Learning assignments submitted
-    as part of the academic coursework. Each assignment is organized
-    into separate folders for clarity and easy navigation.
+  series: Getting Started with Machine Learning
 
-  structure:
-    - folder: ML_one
-      files:
-        - name: ML-1.pdf
-          description: >
-            Assignment 1 focuses on the fundamentals of Machine Learning,
-            basic concepts, and problem understanding.
+  exercises:
 
-    - folder: ML_two
-      files:
-        - name: ML-2.pdf
-          description: >
-            Assignment 2 covers supervised learning techniques and
-            evaluation of models using different metrics.
+    - exercise: Machine Learning Exercise 1
+      folder: ML_one
+      description: >
+        This exercise introduces the fundamentals of Machine Learning
+        through hands-on Exploratory Data Analysis (EDA). The focus is on
+        understanding datasets using Python libraries before building
+        any models.
 
-    - folder: ML_Three
-      files:
-        - name: ML-3.pdf
-          description: >
-            Assignment 3 includes classification methods, kernel-based
-            learning, and concepts such as SVM and bias-variance tradeoff.
+      learning_focus:
+        - Data cleaning and preprocessing
+        - Data visualization and pattern discovery
+        - Building intuition about datasets
 
-    - folder: ML_four
-      files:
-        - name: ML-4.pdf
-          description: >
-            Assignment 4 deals with advanced Machine Learning topics,
-            model optimization, and case-study based analysis.
+      tools_used:
+        - NumPy
+        - Pandas
+        - Matplotlib
+        - Seaborn
 
-  tools_and_technologies:
-    - Python
-    - NumPy
-    - Pandas
-    - Matplotlib
-    - Scikit-learn
+      contents:
+        - Ex-1.ipynb
+        - ML-1.pdf
+        - datasets/
 
-  learning_outcomes:
-    - Understand core machine learning algorithms
-    - Apply supervised learning techniques
-    - Analyze model performance and evaluation metrics
-    - Gain hands-on experience with real-world ML problems
+      datasets:
+        - Iris.csv
+        - loan_train.csv
+        - english.csv
+        - diabetes.csv
+        - email.csv
+
+      notebook_summary:
+        loan_amount_prediction:
+          - Data inspection and missing value analysis
+          - Statistical summaries
+          - Visualizations including histograms, boxplots, and heatmaps
+
+        iris_dataset_analysis:
+          - Species-wise analysis
+          - Pairplots and correlation analysis
+
+        handwritten_character_recognition:
+          - Label distribution analysis
+          - Visualization of sample handwritten characters
+
+        diabetes_prediction:
+          - Health metric analysis
+          - Feature exploration
+
+        email_spam_classification:
+          - Text dataset inspection
+          - Initial spam vs non-spam exploration
+
+    - exercise: Machine Learning Exercise 2
+      folder: ML_two
+      description: >
+        This exercise focuses on supervised learning techniques and
+        introduces basic Machine Learning algorithms. Emphasis is placed
+        on understanding model behavior and evaluation metrics.
+
+      learning_focus:
+        - Supervised learning concepts
+        - Model training and testing
+        - Performance evaluation
+
+      algorithms_covered:
+        - Linear Regression
+        - Logistic Regression
+        - K-Nearest Neighbors (KNN)
+
+      contents:
+        - Ex-2.ipynb
+        - ML-2.pdf
+        - datasets/
+
+      notebook_summary:
+        - Dataset loading and preprocessing
+        - Train-test split
+        - Model training
+        - Accuracy, precision, recall, and F1-score analysis
+        - Visualization of results and predictions
+
+    - exercise: Machine Learning Exercise 3
+      folder: ML_Three
+      description: >
+        This exercise explores classification techniques and kernel-based
+        learning methods. The goal is to understand complex decision
+        boundaries and the role of feature transformation.
+
+      learning_focus:
+        - Classification problems
+        - Kernel methods
+        - Bias–variance tradeoff
+
+      algorithms_covered:
+        - Support Vector Machines (SVM)
+        - Kernel functions (Linear, Polynomial, RBF)
+
+      contents:
+        - Ex-3.ipynb
+        - ML-3.pdf
+        - datasets/
+
+      notebook_summary:
+        - Understanding linear vs non-linear separability
+        - Applying different kernel functions
+        - Hyperparameter tuning
+        - Visualization of decision boundaries
+
+    - exercise: Machine Learning Exercise 4
+      folder: ML_four
+      description: >
+        This exercise covers advanced Machine Learning concepts including
+        model optimization and performance improvement strategies.
+
+      learning_focus:
+        - Advanced evaluation techniques
+        - Model optimization
+        - Case-study based analysis
+
+      topics_covered:
+        - Cross-validation
+        - Overfitting and underfitting
+        - Feature selection
+        - Model comparison
+
+      contents:
+        - Ex-4.ipynb
+        - ML-4.pdf
+        - datasets/
+
+      notebook_summary:
+        - Comparative study of multiple models
+        - Optimization using validation techniques
+        - Final performance analysis and conclusions
+
+  getting_started:
+    steps:
+      - Open the notebook files using Jupyter Notebook, JupyterLab, VS Code, or Google Colab
+      - Install required libraries (numpy, pandas, matplotlib, seaborn, scikit-learn)
+      - Follow instructions inside each notebook for execution
 
   author:
     name: Jani
@@ -53,5 +152,5 @@ repository:
     institution: SSN College of Engineering
 
   note: >
-    This repository is intended for academic submission and learning
-    purposes only.
+    This repository is maintained for academic learning and coursework
+    submission purposes only.
